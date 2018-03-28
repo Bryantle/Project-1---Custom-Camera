@@ -7,17 +7,30 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    let captureSession = AVCaptureSession()
+    //instance which helps data flow between input devices and output captures.
+    var previewLayer:CALayer!
+    //Object that manages image based contents
+    var captureDevice:AVCaptureDevice!
+    //The hardware such as the front cam or back cam
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        prepareCamera()
+        //We call the prepareCamera method to prepare the camera everytime the view loads.
     }
-
+    
+    func prepareCamera(){
+        captureSession.
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
